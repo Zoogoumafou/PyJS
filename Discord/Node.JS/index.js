@@ -34,7 +34,6 @@ client.slashCommands = new Collection();
 
 // Initializing the project
 require("./handler")(client);
-require("./peridodicalHanlder")(client);
-let token = discordConf.get('bot_dev.token')
+let token = discordConf.get('discord.token')
 
 client.login(token);

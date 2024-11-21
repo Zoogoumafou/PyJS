@@ -8,13 +8,12 @@ const {
 } = require("discord.js");
 const fs = require("fs");
 const globPromise = promisify(glob);
-const { sendMembersFromRole } = require("./embedController");
 const fetchAll = require("discord-fetch-all");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
 const config = require("cfg-lib");
 let conf = new config.Config("./config/config.cfg");
-let token = conf.get("bot_dev.token");
+let token = conf.get("discord.token");
 const rest = new REST({ version: "9" }).setToken(token);
 // RESET COMMAND ALL SERVER
 

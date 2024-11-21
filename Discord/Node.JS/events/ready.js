@@ -15,13 +15,4 @@ client.on("ready", async () => {
 
   console.log("client ready")
 
-
-  const Guilds = client.guilds.cache.map((guild) => guild);
-  var i = 0;
-  clearGlobalCommands(client);
-  Guilds.forEach(async (guild) => {
-    console.log(client.user.username, ` is connected to the Discord. (${guild.name})`)
-    pushSlashCommandToGuild(client, guild);
-    i++;
-  });
 });
