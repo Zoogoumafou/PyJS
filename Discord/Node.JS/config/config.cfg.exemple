@@ -1,0 +1,11 @@
+bot_dev: {
+    token: ''
+}
+
+login_dev: {
+    host: '',
+    user: '',
+    password: '',
+    database: ''
+} 
+
