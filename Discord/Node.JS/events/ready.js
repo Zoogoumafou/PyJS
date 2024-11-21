@@ -1,7 +1,4 @@
 const client = require("../index");
-const { sendHelloWorld } = require("../controllers/embedController");
-const { pushSlashCommand, refreshingCommandsForAserver, clearGlobalCommands, pushSlashCommandToGuild} = require("../controllers/utils");
-const { send } = require("process");
 
 /**  What i want to do here is
  * At every Lunch Remove every command of all server, then repush them, is the best way i found to make sur every body have the last updated command without delay.
@@ -12,7 +9,7 @@ const { send } = require("process");
 client.on("ready", async () => {
   
   client.user.setPresence({
-    activities: [{ name: 'les stats fivem', type: 3 }], // Type 0 est pour Joue à
+    activities: [{ name: 'Etudie INF2020', type: 3 }], // Type 0 est pour Joue à
     status: 'online' // Vous pouvez choisir entre 'online', 'idle', 'dnd', ou 'invisible'
 });
 
